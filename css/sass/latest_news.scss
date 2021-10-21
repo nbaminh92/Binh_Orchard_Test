@@ -43,6 +43,8 @@
       // top - right - bottom - left
       padding: 30px 15px 0 15px;
 
+      transition: transform .5s;
+
       .content_div {
         a {
           color: #ffffff;
@@ -83,6 +85,9 @@
         border-color: 1px solid #cf1430;
       }
 
+      &:hover {
+        transform: scale(1.08);
+      }
   }
 
   // ======================================================================================
