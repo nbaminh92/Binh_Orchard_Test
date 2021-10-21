@@ -5,44 +5,68 @@ body {
 .main {
   // make gallery stay in middle of the page
   width: 1200px;
+  height: 800px;
   margin: 0 auto;
   margin-top: 10vw;
 
   table {
     table-layout: fixed;
     width: 100%;
+
+    // make right-handed column scrollable when long contents.
+    #scrollable_column {
+      overflow-y: scroll;
+      height: 550px;
+    }
+
+    td {
+      // make each columns has equal width
+      width: 33%;
+
+      vertical-align: top;
+      font-family: sans-serif;
+      color: #ffffff;
+
+      // top - right - bottom - left
+      padding: 0 10px 0 10px;
+
+      img {
+        width: 100%;
+      }
+
+      #img_top_3 {
+        margin-top: 3%;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 17px;
+      }
+
+      #answer_body_content {
+        color: #a0a2a2;
+      }
+
+      h2 {
+        // remove default margin from h2
+        margin: 0;
+
+        // use border bottom to have better underline and create bigger gap from text
+        padding-bottom: 20px;
+        border-bottom: 1px solid #a0a2a2;
+
+        font-weight: 200;
+        color: #a0a2a2;
+      }
+
+      strong {
+        color: #cf1430;
+      }
+
+      #be_mindful_content {
+        font-weight: 600;
+      }
+    }
   }
-  td {
-    // make each columns has equal width
-    width: 33%;
 
-    vertical-align: top;
-    font-family: sans-serif;
-    color: #ffffff;
-
-    #img_top_3 {
-      margin-top: 3%;
-    }
-
-    p {
-      line-height: 2;
-    }
-
-    h2 {
-      // remove default margin from h2
-      margin: 0;
-
-      // use border bottom to have better underline and create bigger gap from text
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ffffff;
-    }
-
-    strong {
-      color: #cf1430;
-    }
-
-    #be_mindful_content {
-      font-weight: 600;
-    }
-  }
 }
