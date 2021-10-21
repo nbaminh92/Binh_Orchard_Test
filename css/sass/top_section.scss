@@ -16,7 +16,15 @@ body {
     // make right-handed column scrollable when long contents.
     #scrollable_column {
       overflow-y: scroll;
-      height: 550px;
+      height: 570px;
+
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+
+      // Hide scrollbar for Chrome, Safari and Opera
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     td {
@@ -32,7 +40,16 @@ body {
 
       img {
         width: 100%;
+
+        // animation
+        transition: transform .5s;
+
+        // zoom on hover
+        &:hover {
+          transform: scale(1.08);
+        }
       }
+
 
       #img_top_3 {
         margin-top: 3%;
