@@ -91,6 +91,10 @@ body {
   }
 
 
+  // ======================================================================================
+  // Media section
+  // ======================================================================================
+
   // On screens that are 1000px wide or less, go from four columns to two columns
   @media screen and (max-width: 1000px) {
       .column {
@@ -115,7 +119,7 @@ body {
       }
   }
 
-   // On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other
+   // On screens that are 500px wide or less, make the columns stack on top of each other instead of next to each other
   @media screen and (max-width: 500px) {
     .row {
       flex-direction: column;
