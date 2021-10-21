@@ -1,0 +1,20 @@
+body {
+  background-color: #000000;
+}
+
+.main {
+  // make gallery stay in middle of the page
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10vw;
+
+  table {
+    table-layout: fixed ;
+    width: 100%;
+    background-color: white;
+  }
+  td {
+    width: 33%;
+    vertical-align: top;
+  }
+}
