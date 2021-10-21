@@ -1,8 +1,25 @@
 body {
-  background-color: #000000;
+  // background-color: #000000;
+  // create animation effect gradient for background
+	background: linear-gradient(45deg, #000000, #585858);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+
+  @keyframes gradient {
+  	0% {
+  		background-position: 0% 50%;
+  	}
+  	50% {
+  		background-position: 100% 50%;
+  	}
+  	100% {
+  		background-position: 0% 50%;
+  	}
+  }
 }
 
-.top_section {
+  .top_section {
   // make gallery stay in middle of the page
   width: 1200px;
   margin: 0 auto;
