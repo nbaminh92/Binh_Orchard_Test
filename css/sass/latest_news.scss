@@ -3,7 +3,6 @@
   width: 1200px;
   margin: 0 auto;
   margin-top: 10vw;
-  position: relative;
 
   * {
     box-sizing: border-box;
@@ -13,12 +12,6 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /* Create 3 equal columns */
-  .column {
-    flex: 33%;
-    padding: 20px;
   }
 
 
@@ -32,28 +25,16 @@
     font-size: 36px;
   }
 
-    .image_div {
-      a {
-        // create red underline
-        border-bottom: 2px solid #cf1430;
-      }
+  .image_div {
+    a {
+      // create red underline
+      border-bottom: 2px solid #cf1430;
     }
+  }
 
-    .content_div {
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 600;
-
-        // create red underline
-        padding-bottom: 10px;
-        border-bottom: 1px solid #cf1430;
-      }
-    }
-
-    .column {
-      // make each columns has equal width
-      width: 33%;
+  .column {
+      flex: 33%;
+      padding: 20px;
 
       vertical-align: top;
       font-family: sans-serif;
@@ -62,9 +43,26 @@
       // top - right - bottom - left
       padding: 30px 15px 0 15px;
 
-      p {
-        line-height: 2;
-        color: #a0a2a2;
+      .content_div {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 600;
+
+          // create red underline
+          padding-bottom: 10px;
+          border-bottom: 1px solid #cf1430;
+        }
+
+        p {
+          line-height: 2;
+          color: #a0a2a2;
+        }
+
+        strong {
+          font-size: 17px;
+          color: #ffffff;
+        }
       }
 
       img {
@@ -73,10 +71,24 @@
         border-color: 1px solid #cf1430;
       }
 
-      strong {
-        font-size: 17px;
-      }
+  }
 
+  // On screens that are 1000px wide or less, go from four columns to two columns
+  @media screen and (max-width: 1000px) {
+      .column {
+        flex: 50% !important;
+        padding: 30px 20px 0 20px !important;
+      }
+  }
+
+   // On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other
+  @media screen and (max-width: 500px) {
+    .row {
+      flex-direction: column;
+    }
+    .column {
+      width: 100%;
+    }
   }
 
 }
