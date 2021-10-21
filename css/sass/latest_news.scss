@@ -98,6 +98,17 @@
         a {
           font-size: 1.5em;
         }
+
+        // news at 3th place will reduce width to match with div 1st
+        &:nth-child(3) {
+          img {
+            width: 48%;
+          }
+
+          .content_div {
+            width: 48%;
+          }
+        }
       }
   }
 
@@ -125,6 +136,17 @@
 
         a {
           font-size: 2.5em;
+        }
+      }
+
+      // back to 100%
+      &:nth-child(3) {
+        img {
+          width: 100%;
+        }
+
+        .content_div {
+          width: 100%;
         }
       }
     }
