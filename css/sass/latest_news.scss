@@ -82,6 +82,22 @@
       .column {
         flex: 50% !important;
         padding: 30px 20px 0 20px !important;
+
+        img {
+          height: auto !important;
+        }
+
+        strong {
+          font-size: 1.2em !important;
+        }
+
+        p {
+          font-size: 1.5em;
+        }
+
+        a {
+          font-size: 1.5em;
+        }
       }
   }
 
@@ -95,7 +111,7 @@
 
       padding: 50px !important;
       img {
-        height: auto;
+        height: auto !important;
       }
 
       .content_div {
