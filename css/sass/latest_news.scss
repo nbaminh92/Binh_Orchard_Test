@@ -4,6 +4,22 @@
   margin: 0 auto;
   margin-top: 10vw;
 
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    padding: 20px;
+  }
+
   h1 {
     font-family: sans-serif;
     color: #ffffff;
@@ -13,12 +29,26 @@
     font-size: 36px;
   }
 
+    .image_div {
+      a {
+        // create red underline
+        border-bottom: 2px solid #cf1430;
+      }
+    }
 
-  table {
-    table-layout: fixed;
-    width: 100%;
+    .content_div {
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
 
-    td {
+        // create red underline
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cf1430;
+      }
+    }
+
+    .column {
       // make each columns has equal width
       width: 33%;
 
@@ -44,16 +74,6 @@
         font-size: 17px;
       }
 
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 600;
-
-        // create red underline
-        padding-bottom: 10px;
-        border-bottom: 1px solid #cf1430;
-      }
-    }
   }
 
 }

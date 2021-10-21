@@ -9,8 +9,23 @@ body {
   margin: 0 auto;
   margin-top: 10vw;
 
-  table {
-    table-layout: fixed;
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    padding: 20px;
+  }
+
+  .row {
     width: 100%;
 
     // make right-handed column scrollable when long contents.
@@ -27,7 +42,7 @@ body {
       }
     }
 
-    td {
+    .column {
       // make each columns has equal width
       width: 33%;
 
