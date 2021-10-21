@@ -3,6 +3,7 @@
   width: 1200px;
   margin: 0 auto;
   margin-top: 10vw;
+  position: relative;
 
   * {
     box-sizing: border-box;
@@ -14,11 +15,13 @@
     flex-wrap: wrap;
   }
 
-  /* Create four equal columns */
+  /* Create 3 equal columns */
   .column {
-    flex: 25%;
+    flex: 33%;
     padding: 20px;
   }
+
+
 
   h1 {
     font-family: sans-serif;
