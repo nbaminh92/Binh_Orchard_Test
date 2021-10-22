@@ -6,17 +6,17 @@ body {
 	// animation: gradient 10s ease infinite;
 	// height: 100vh;
 
-  @keyframes gradient {
-  	0% {
-  		background-position: 0% 50%;
-  	}
-  	50% {
-  		background-position: 100% 50%;
-  	}
-  	100% {
-  		background-position: 0% 50%;
-  	}
-  }
+  // @keyframes gradient {
+  // 	0% {
+  // 		background-position: 0% 50%;
+  // 	}
+  // 	50% {
+  // 		background-position: 100% 50%;
+  // 	}
+  // 	100% {
+  // 		background-position: 0% 50%;
+  // 	}
+  // }
 }
 
   .top_section {
@@ -59,18 +59,18 @@ body {
       // top - right - bottom - left
       padding: 0 10px 0 10px;
 
-      img {
-        width: 100%;
-
-        // animation
-        transition: transform .5s;
-
-        // zoom on hover
-        &:hover {
-          transform: scale(1.08);
-        }
+      p {
+        line-height: 2;
+        font-size: 17px;
       }
 
+      img {
+        width: 100%;
+      }
+
+      //  =========================================================
+      /* Image section */
+      //  =========================================================
 
 			// images animation
 			#img_top_1 {
@@ -101,10 +101,32 @@ body {
 			   to   { transform: translateY(0); }
 			}
 
-      p {
-        line-height: 2;
-        font-size: 17px;
+
+      // Shake child node 1
+      &:nth-child(1) {
+        animation: shake 0.9s infinite 5s;
+        animation-iteration-count: 1;
+        animation-delay: 5s;
       }
+
+
+      @keyframes shake {
+        0% { transform: rotate(0deg); }
+        10% { transform: rotate(-1deg); }
+        20% { transform: rotate(1deg); }
+        30% { transform: rotate(0deg); }
+        40% { transform: rotate(1deg); }
+        50% { transform: rotate(-1deg); }
+        60% { transform: rotate(0deg); }
+        70% { transform: rotate(-1deg); }
+        80% { transform: rotate(1deg); }
+        90% { transform: rotate(0deg); }
+        100% { transform: rotate(-1deg); }
+      }
+
+      //  =========================================================
+      /* Answer Your Body content section */
+      //  =========================================================
 
       #answer_body_content {
         color: #a0a2a2;
@@ -128,28 +150,6 @@ body {
 
       #be_mindful_content {
         font-weight: 600;
-      }
-
-      // Shake child node 1
-      &:nth-child(1) {
-        animation: shake 0.9s infinite 5s;
-        animation-iteration-count: 1;
-        animation-delay: 5s;
-      }
-
-
-      @keyframes shake {
-        0% { transform: rotate(0deg); }
-        10% { transform: rotate(-1deg); }
-        20% { transform: rotate(1deg); }
-        30% { transform: rotate(0deg); }
-        40% { transform: rotate(1deg); }
-        50% { transform: rotate(-1deg); }
-        60% { transform: rotate(0deg); }
-        70% { transform: rotate(-1deg); }
-        80% { transform: rotate(1deg); }
-        90% { transform: rotate(0deg); }
-        100% { transform: rotate(-1deg); }
       }
     }
   }
