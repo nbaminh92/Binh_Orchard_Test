@@ -2,6 +2,8 @@
 window.onclick = e => {
     console.log(e.target);  // to get the element
 
+    /* function to display modal when clicking to each image on top section */
+    
     // Get the modal
     var modal = document.getElementById("myModal");
 
