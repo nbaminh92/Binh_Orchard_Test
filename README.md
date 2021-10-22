@@ -29,7 +29,7 @@
   * Put mock data "lorem ipsum" to test the scrollbar when the contents are too long.
 * **Latest News section**
   * Add a feature to reduce the length of the paragraph after reaching 3 lines and display 3 dots instead. (the code is commented at the moment to match the design)
-* ** Animation/Effects **
+* **Animation/Effects**
   * Top images slide in on page load.
   * Click on any image to show its Modal popup.
   * First top image shake for attention after a short period
