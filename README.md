@@ -26,6 +26,12 @@
 * Use DIV instead of TABLE to have the flexibility in stacking via display Flex
 * Use SASS for easy-to-read CSS code and fast declare styles for each element.
 * **Answer Your Body Need section**
-Put mock data "lorem ipsum" to test the scrollbar when the contents are too long.
+  * Put mock data "lorem ipsum" to test the scrollbar when the contents are too long.
 * **Latest News section**
-Add a feature to reduce the length of the paragraph after reaching 3 lines and display 3 dots instead. (the code is commented at the moment to match the design)
+  * Add a feature to reduce the length of the paragraph after reaching 3 lines and display 3 dots instead. (the code is commented at the moment to match the design)
+* ** Animation/Effects **
+  * Top images slide in on page load.
+  * Click on any image to show its Modal popup.
+  * First top image shake for attention after a short period
+  * Answer Your Body title reveal one after another and repeat
+  * Latest news item scale up on hover
