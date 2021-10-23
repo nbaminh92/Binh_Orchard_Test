@@ -52,6 +52,10 @@ body {
 
       img {
         width: 100%;
+
+        // &:hover {
+        //   transform: scale(1.08);
+        // }
       }
 
       //  =========================================================
@@ -79,7 +83,7 @@ body {
 
       #img_top_3 {
         margin-top: 3%;
-				animation: moveUp 3.5s 1 normal forwards;
+				animation: moveUp 2s 1 normal forwards;
       }
 
 			@keyframes moveUp {
@@ -89,11 +93,11 @@ body {
 
 
       // Shake child node 1
-      &:nth-child(1) {
-        animation: shake 0.9s infinite 5s;
-        animation-iteration-count: 1;
-        animation-delay: 5s;
-      }
+      // &:nth-child(1) {
+      //   animation: shake 0.9s infinite 5s;
+      //   animation-iteration-count: 1;
+      //   animation-delay: 5s;
+      // }
 
 
       @keyframes shake {
