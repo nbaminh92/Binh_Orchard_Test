@@ -11,17 +11,15 @@ window.onclick = e => {
     // use the target from Window onclick to get the ID of the image
     var img = document.getElementById(e.target.id);
 
-    var modalImg = document.getElementById("img01");
+    var modalImg = document.getElementById("enlarge_image");
     var captionText = document.getElementById("caption");
 
     // Check if the tag name is img or else it might confuse with other element that has ID
     // prevent errors when user click to bottom section image.
     if (e.target.tagName === 'IMG' && e.target.className !== 'bottom_section_image') {
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      }
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      captionText.innerHTML = img.alt;
     }
 
 

@@ -17,7 +17,12 @@
 ## Functionalities
 * Display element by on click via console log.
 * Responsive layout: stackable columns on 1000px and 500px
-* Animation effects: on Development notes below
+* **Animation/Effects**
+  * Top images slide in on page load.
+  * Click on any image to show its Modal popup.
+  * First top image shake for attention after a short period - commented
+  * Answer Your Body title reveal one after another and repeat
+  * Latest news item scale up on hover
 
 ## How to use
 * Run index.html on any browser.
@@ -30,9 +35,3 @@
   * Put mock data "lorem ipsum" to test the scrollbar when the contents are too long.
 * **Latest News section**
   * Add a feature to reduce the length of the paragraph after reaching 3 lines and display 3 dots instead. (the code is commented at the moment to match the design)
-* **Animation/Effects**
-  * Top images slide in on page load.
-  * Click on any image to show its Modal popup.
-  * First top image shake for attention after a short period - commented
-  * Answer Your Body title reveal one after another and repeat
-  * Latest news item scale up on hover
