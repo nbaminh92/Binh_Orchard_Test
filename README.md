@@ -17,7 +17,7 @@
 ## Functionalities
 * Display element by on click via console log.
 * Responsive layout: stackable columns on 1000px and 500px
-* Animation effects: background and image hover
+* Animation effects: on Development notes below
 
 ## How to use
 * Run index.html on any browser.
@@ -33,6 +33,6 @@
 * **Animation/Effects**
   * Top images slide in on page load.
   * Click on any image to show its Modal popup.
-  * First top image shake for attention after a short period
+  * First top image shake for attention after a short period - commented
   * Answer Your Body title reveal one after another and repeat
   * Latest news item scale up on hover
