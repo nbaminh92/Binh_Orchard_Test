@@ -3,7 +3,7 @@ window.onclick = e => {
     console.log(e.target);  // to get the element
 
     /* function to display modal when clicking to each image on top section */
-    
+
     // Get the modal
     var modal = document.getElementById("myModal");
 
@@ -15,7 +15,8 @@ window.onclick = e => {
     var captionText = document.getElementById("caption");
 
     // Check if the tag name is img or else it might confuse with other element that has ID
-    if (e.target.tagName === 'IMG') {
+    // prevent errors when user click to bottom section image.
+    if (e.target.tagName === 'IMG' && e.target.className !== 'bottom_section_image') {
       img.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
@@ -29,6 +30,11 @@ window.onclick = e => {
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Click on black space can close the popup modal
+    if (e.target == modal) {
       modal.style.display = "none";
     }
 }

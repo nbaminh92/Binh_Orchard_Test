@@ -25,6 +25,7 @@
 ## Development note
 * Use DIV instead of TABLE to have the flexibility in stacking via display Flex
 * Use SASS for easy-to-read CSS code and fast declare styles for each element.
+* Add single_page.html to have a feeling of page redirection from Home Page to new page.
 * **Answer Your Body Need section**
   * Put mock data "lorem ipsum" to test the scrollbar when the contents are too long.
 * **Latest News section**
